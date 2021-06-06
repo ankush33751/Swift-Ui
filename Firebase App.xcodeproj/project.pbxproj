@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,104 @@
 		69DE0B2D266D40EA00517248 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B02266D40E900517248 /* ContentView.swift */; };
 		69DE0B2E266D40EA00517248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B03266D40EA00517248 /* Assets.xcassets */; };
 		69DE0B2F266D40EA00517248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B03266D40EA00517248 /* Assets.xcassets */; };
+		69DE0B5B266D41D300517248 /* Certificates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B3F266D41D200517248 /* Certificates.swift */; };
+		69DE0B5C266D41D300517248 /* Certificates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B3F266D41D200517248 /* Certificates.swift */; };
+		69DE0B5D266D41D300517248 /* Certificates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B3F266D41D200517248 /* Certificates.swift */; };
+		69DE0B5E266D41D300517248 /* Certificates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B3F266D41D200517248 /* Certificates.swift */; };
+		69DE0B5F266D41D300517248 /* MiddleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B40266D41D200517248 /* MiddleCard.swift */; };
+		69DE0B60266D41D300517248 /* MiddleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B40266D41D200517248 /* MiddleCard.swift */; };
+		69DE0B61266D41D300517248 /* MiddleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B40266D41D200517248 /* MiddleCard.swift */; };
+		69DE0B62266D41D300517248 /* MiddleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B40266D41D200517248 /* MiddleCard.swift */; };
+		69DE0B63266D41D300517248 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B41266D41D200517248 /* HomeView.swift */; };
+		69DE0B64266D41D300517248 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B41266D41D200517248 /* HomeView.swift */; };
+		69DE0B65266D41D300517248 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B41266D41D200517248 /* HomeView.swift */; };
+		69DE0B66266D41D300517248 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B41266D41D200517248 /* HomeView.swift */; };
+		69DE0B67266D41D300517248 /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B42266D41D200517248 /* VideoCard.swift */; };
+		69DE0B68266D41D300517248 /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B42266D41D200517248 /* VideoCard.swift */; };
+		69DE0B69266D41D300517248 /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B42266D41D200517248 /* VideoCard.swift */; };
+		69DE0B6A266D41D300517248 /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B42266D41D200517248 /* VideoCard.swift */; };
+		69DE0B6B266D41D300517248 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B43266D41D200517248 /* Header.swift */; };
+		69DE0B6C266D41D300517248 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B43266D41D200517248 /* Header.swift */; };
+		69DE0B6D266D41D300517248 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B43266D41D200517248 /* Header.swift */; };
+		69DE0B6E266D41D300517248 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B43266D41D200517248 /* Header.swift */; };
+		69DE0B6F266D41D300517248 /* Modifiers in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B44266D41D200517248 /* Modifiers */; };
+		69DE0B70266D41D300517248 /* Modifiers in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B44266D41D200517248 /* Modifiers */; };
+		69DE0B71266D41D300517248 /* Modifiers in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B44266D41D200517248 /* Modifiers */; };
+		69DE0B72266D41D300517248 /* Modifiers in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B44266D41D200517248 /* Modifiers */; };
+		69DE0B73266D41D300517248 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B45266D41D200517248 /* DetailView.swift */; };
+		69DE0B74266D41D300517248 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B45266D41D200517248 /* DetailView.swift */; };
+		69DE0B75266D41D300517248 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B45266D41D200517248 /* DetailView.swift */; };
+		69DE0B76266D41D300517248 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B45266D41D200517248 /* DetailView.swift */; };
+		69DE0B77266D41D300517248 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B46266D41D200517248 /* RingView.swift */; };
+		69DE0B78266D41D300517248 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B46266D41D200517248 /* RingView.swift */; };
+		69DE0B79266D41D300517248 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B46266D41D200517248 /* RingView.swift */; };
+		69DE0B7A266D41D300517248 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B46266D41D200517248 /* RingView.swift */; };
+		69DE0B7B266D41D300517248 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B47266D41D200517248 /* Test.swift */; };
+		69DE0B7C266D41D300517248 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B47266D41D200517248 /* Test.swift */; };
+		69DE0B7D266D41D300517248 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B47266D41D200517248 /* Test.swift */; };
+		69DE0B7E266D41D300517248 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B47266D41D200517248 /* Test.swift */; };
+		69DE0B7F266D41D300517248 /* Course in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B48266D41D200517248 /* Course */; };
+		69DE0B80266D41D300517248 /* Course in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B48266D41D200517248 /* Course */; };
+		69DE0B81266D41D300517248 /* Course in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B48266D41D200517248 /* Course */; };
+		69DE0B82266D41D300517248 /* Course in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B48266D41D200517248 /* Course */; };
+		69DE0B83266D41D300517248 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B49266D41D200517248 /* BottomView.swift */; };
+		69DE0B84266D41D300517248 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B49266D41D200517248 /* BottomView.swift */; };
+		69DE0B85266D41D300517248 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B49266D41D200517248 /* BottomView.swift */; };
+		69DE0B86266D41D300517248 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B49266D41D200517248 /* BottomView.swift */; };
+		69DE0B87266D41D300517248 /* ImageCardModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4A266D41D200517248 /* ImageCardModal.swift */; };
+		69DE0B88266D41D300517248 /* ImageCardModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4A266D41D200517248 /* ImageCardModal.swift */; };
+		69DE0B89266D41D300517248 /* ImageCardModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4A266D41D200517248 /* ImageCardModal.swift */; };
+		69DE0B8A266D41D300517248 /* ImageCardModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4A266D41D200517248 /* ImageCardModal.swift */; };
+		69DE0B8B266D41D300517248 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4B266D41D200517248 /* CustomLabel.swift */; };
+		69DE0B8C266D41D300517248 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4B266D41D200517248 /* CustomLabel.swift */; };
+		69DE0B8D266D41D300517248 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4B266D41D200517248 /* CustomLabel.swift */; };
+		69DE0B8E266D41D300517248 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4B266D41D200517248 /* CustomLabel.swift */; };
+		69DE0B8F266D41D300517248 /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4C266D41D200517248 /* BlurEffect.swift */; };
+		69DE0B90266D41D300517248 /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4C266D41D200517248 /* BlurEffect.swift */; };
+		69DE0B91266D41D300517248 /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4C266D41D200517248 /* BlurEffect.swift */; };
+		69DE0B92266D41D300517248 /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4C266D41D200517248 /* BlurEffect.swift */; };
+		69DE0B93266D41D300517248 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4D266D41D200517248 /* Profile.swift */; };
+		69DE0B94266D41D300517248 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4D266D41D200517248 /* Profile.swift */; };
+		69DE0B95266D41D300517248 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4D266D41D200517248 /* Profile.swift */; };
+		69DE0B96266D41D300517248 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4D266D41D200517248 /* Profile.swift */; };
+		69DE0B97266D41D300517248 /* Work_Sans in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B4E266D41D200517248 /* Work_Sans */; };
+		69DE0B98266D41D300517248 /* Work_Sans in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B4E266D41D200517248 /* Work_Sans */; };
+		69DE0B99266D41D300517248 /* Work_Sans in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B4E266D41D200517248 /* Work_Sans */; };
+		69DE0B9A266D41D300517248 /* Work_Sans in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B4E266D41D200517248 /* Work_Sans */; };
+		69DE0B9B266D41D300517248 /* DingDong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4F266D41D200517248 /* DingDong.swift */; };
+		69DE0B9C266D41D300517248 /* DingDong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4F266D41D200517248 /* DingDong.swift */; };
+		69DE0B9D266D41D300517248 /* DingDong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4F266D41D200517248 /* DingDong.swift */; };
+		69DE0B9E266D41D300517248 /* DingDong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B4F266D41D200517248 /* DingDong.swift */; };
+		69DE0B9F266D41D300517248 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B50266D41D200517248 /* UpdateStore.swift */; };
+		69DE0BA0266D41D300517248 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B50266D41D200517248 /* UpdateStore.swift */; };
+		69DE0BA1266D41D300517248 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B50266D41D200517248 /* UpdateStore.swift */; };
+		69DE0BA2266D41D300517248 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B50266D41D200517248 /* UpdateStore.swift */; };
+		69DE0BA3266D41D300517248 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B51266D41D300517248 /* CardView.swift */; };
+		69DE0BA4266D41D300517248 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B51266D41D300517248 /* CardView.swift */; };
+		69DE0BA5266D41D300517248 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B51266D41D300517248 /* CardView.swift */; };
+		69DE0BA6266D41D300517248 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B51266D41D300517248 /* CardView.swift */; };
+		69DE0BA7266D41D300517248 /* UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B52266D41D300517248 /* UpdateView.swift */; };
+		69DE0BA8266D41D300517248 /* UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B52266D41D300517248 /* UpdateView.swift */; };
+		69DE0BA9266D41D300517248 /* UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B52266D41D300517248 /* UpdateView.swift */; };
+		69DE0BAA266D41D300517248 /* UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B52266D41D300517248 /* UpdateView.swift */; };
+		69DE0BAB266D41D300517248 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B53266D41D300517248 /* TabBar.swift */; };
+		69DE0BAC266D41D300517248 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B53266D41D300517248 /* TabBar.swift */; };
+		69DE0BAD266D41D300517248 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B53266D41D300517248 /* TabBar.swift */; };
+		69DE0BAE266D41D300517248 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B53266D41D300517248 /* TabBar.swift */; };
+		69DE0BAF266D41D300517248 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B54266D41D300517248 /* Card.swift */; };
+		69DE0BB0266D41D300517248 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B54266D41D300517248 /* Card.swift */; };
+		69DE0BB1266D41D300517248 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B54266D41D300517248 /* Card.swift */; };
+		69DE0BB2266D41D300517248 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B54266D41D300517248 /* Card.swift */; };
+		69DE0BB3266D41D300517248 /* ApiCalls in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B55266D41D300517248 /* ApiCalls */; };
+		69DE0BB4266D41D300517248 /* ApiCalls in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B55266D41D300517248 /* ApiCalls */; };
+		69DE0BB5266D41D300517248 /* ApiCalls in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B55266D41D300517248 /* ApiCalls */; };
+		69DE0BB6266D41D300517248 /* ApiCalls in Resources */ = {isa = PBXBuildFile; fileRef = 69DE0B55266D41D300517248 /* ApiCalls */; };
+		69DE0BB7266D41D300517248 /* UpdateModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B56266D41D300517248 /* UpdateModal.swift */; };
+		69DE0BB8266D41D300517248 /* UpdateModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B56266D41D300517248 /* UpdateModal.swift */; };
+		69DE0BB9266D41D300517248 /* UpdateModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B56266D41D300517248 /* UpdateModal.swift */; };
+		69DE0BBA266D41D300517248 /* UpdateModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE0B56266D41D300517248 /* UpdateModal.swift */; };
+		69DE0BBD266D425700517248 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 69DE0BBC266D425700517248 /* SDWebImageSwiftUI */; };
+		69DE0BC0266D426D00517248 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = 69DE0BBF266D426D00517248 /* Contentful */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +147,30 @@
 		69DE0B23266D40EA00517248 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DE0B27266D40EA00517248 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		69DE0B29266D40EA00517248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69DE0B3F266D41D200517248 /* Certificates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Certificates.swift; sourceTree = "<group>"; };
+		69DE0B40266D41D200517248 /* MiddleCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleCard.swift; sourceTree = "<group>"; };
+		69DE0B41266D41D200517248 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		69DE0B42266D41D200517248 /* VideoCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCard.swift; sourceTree = "<group>"; };
+		69DE0B43266D41D200517248 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		69DE0B44266D41D200517248 /* Modifiers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modifiers; sourceTree = "<group>"; };
+		69DE0B45266D41D200517248 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		69DE0B46266D41D200517248 /* RingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		69DE0B47266D41D200517248 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		69DE0B48266D41D200517248 /* Course */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Course; sourceTree = "<group>"; };
+		69DE0B49266D41D200517248 /* BottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
+		69DE0B4A266D41D200517248 /* ImageCardModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCardModal.swift; sourceTree = "<group>"; };
+		69DE0B4B266D41D200517248 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		69DE0B4C266D41D200517248 /* BlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
+		69DE0B4D266D41D200517248 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		69DE0B4E266D41D200517248 /* Work_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Work_Sans; sourceTree = "<group>"; };
+		69DE0B4F266D41D200517248 /* DingDong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DingDong.swift; sourceTree = "<group>"; };
+		69DE0B50266D41D200517248 /* UpdateStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
+		69DE0B51266D41D300517248 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		69DE0B52266D41D300517248 /* UpdateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateView.swift; sourceTree = "<group>"; };
+		69DE0B53266D41D300517248 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		69DE0B54266D41D300517248 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		69DE0B55266D41D300517248 /* ApiCalls */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ApiCalls; sourceTree = "<group>"; };
+		69DE0B56266D41D300517248 /* UpdateModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +178,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DE0BC0266D426D00517248 /* Contentful in Frameworks */,
+				69DE0BBD266D425700517248 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +222,30 @@
 		69DE0B00266D40E900517248 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				69DE0B55266D41D300517248 /* ApiCalls */,
+				69DE0B4C266D41D200517248 /* BlurEffect.swift */,
+				69DE0B49266D41D200517248 /* BottomView.swift */,
+				69DE0B54266D41D300517248 /* Card.swift */,
+				69DE0B51266D41D300517248 /* CardView.swift */,
+				69DE0B3F266D41D200517248 /* Certificates.swift */,
+				69DE0B48266D41D200517248 /* Course */,
+				69DE0B4B266D41D200517248 /* CustomLabel.swift */,
+				69DE0B45266D41D200517248 /* DetailView.swift */,
+				69DE0B4F266D41D200517248 /* DingDong.swift */,
+				69DE0B43266D41D200517248 /* Header.swift */,
+				69DE0B41266D41D200517248 /* HomeView.swift */,
+				69DE0B4A266D41D200517248 /* ImageCardModal.swift */,
+				69DE0B40266D41D200517248 /* MiddleCard.swift */,
+				69DE0B44266D41D200517248 /* Modifiers */,
+				69DE0B4D266D41D200517248 /* Profile.swift */,
+				69DE0B46266D41D200517248 /* RingView.swift */,
+				69DE0B53266D41D300517248 /* TabBar.swift */,
+				69DE0B47266D41D200517248 /* Test.swift */,
+				69DE0B56266D41D300517248 /* UpdateModal.swift */,
+				69DE0B50266D41D200517248 /* UpdateStore.swift */,
+				69DE0B52266D41D300517248 /* UpdateView.swift */,
+				69DE0B42266D41D200517248 /* VideoCard.swift */,
+				69DE0B4E266D41D200517248 /* Work_Sans */,
 				69DE0B01266D40E900517248 /* Firebase_AppApp.swift */,
 				69DE0B02266D40E900517248 /* ContentView.swift */,
 				69DE0B03266D40EA00517248 /* Assets.xcassets */,
@@ -167,6 +315,10 @@
 			dependencies = (
 			);
 			name = "Firebase App (iOS)";
+			packageProductDependencies = (
+				69DE0BBC266D425700517248 /* SDWebImageSwiftUI */,
+				69DE0BBF266D426D00517248 /* Contentful */,
+			);
 			productName = "Firebase App (iOS)";
 			productReference = 69DE0B08266D40EA00517248 /* Firebase App.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +410,10 @@
 				Base,
 			);
 			mainGroup = 69DE0AFB266D40E900517248;
+			packageReferences = (
+				69DE0BBB266D425700517248 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				69DE0BBE266D426D00517248 /* XCRemoteSwiftPackageReference "contentful.swift" */,
+			);
 			productRefGroup = 69DE0B09266D40EA00517248 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,7 +431,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DE0B97266D41D300517248 /* Work_Sans in Resources */,
+				69DE0B7F266D41D300517248 /* Course in Resources */,
+				69DE0BB3266D41D300517248 /* ApiCalls in Resources */,
 				69DE0B2E266D40EA00517248 /* Assets.xcassets in Resources */,
+				69DE0B6F266D41D300517248 /* Modifiers in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +443,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DE0B98266D41D300517248 /* Work_Sans in Resources */,
+				69DE0B80266D41D300517248 /* Course in Resources */,
+				69DE0BB4266D41D300517248 /* ApiCalls in Resources */,
 				69DE0B2F266D40EA00517248 /* Assets.xcassets in Resources */,
+				69DE0B70266D41D300517248 /* Modifiers in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +455,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DE0B71266D41D300517248 /* Modifiers in Resources */,
+				69DE0BB5266D41D300517248 /* ApiCalls in Resources */,
+				69DE0B81266D41D300517248 /* Course in Resources */,
+				69DE0B99266D41D300517248 /* Work_Sans in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +466,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DE0B72266D41D300517248 /* Modifiers in Resources */,
+				69DE0BB6266D41D300517248 /* ApiCalls in Resources */,
+				69DE0B82266D41D300517248 /* Course in Resources */,
+				69DE0B9A266D41D300517248 /* Work_Sans in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +480,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DE0B77266D41D300517248 /* RingView.swift in Sources */,
+				69DE0B6B266D41D300517248 /* Header.swift in Sources */,
+				69DE0B73266D41D300517248 /* DetailView.swift in Sources */,
+				69DE0B8B266D41D300517248 /* CustomLabel.swift in Sources */,
+				69DE0BB7266D41D300517248 /* UpdateModal.swift in Sources */,
+				69DE0B83266D41D300517248 /* BottomView.swift in Sources */,
+				69DE0BAB266D41D300517248 /* TabBar.swift in Sources */,
 				69DE0B2C266D40EA00517248 /* ContentView.swift in Sources */,
+				69DE0BA3266D41D300517248 /* CardView.swift in Sources */,
+				69DE0B7B266D41D300517248 /* Test.swift in Sources */,
+				69DE0B67266D41D300517248 /* VideoCard.swift in Sources */,
+				69DE0B93266D41D300517248 /* Profile.swift in Sources */,
+				69DE0B9F266D41D300517248 /* UpdateStore.swift in Sources */,
+				69DE0B8F266D41D300517248 /* BlurEffect.swift in Sources */,
+				69DE0B5F266D41D300517248 /* MiddleCard.swift in Sources */,
+				69DE0B63266D41D300517248 /* HomeView.swift in Sources */,
 				69DE0B2A266D40EA00517248 /* Firebase_AppApp.swift in Sources */,
+				69DE0B9B266D41D300517248 /* DingDong.swift in Sources */,
+				69DE0BA7266D41D300517248 /* UpdateView.swift in Sources */,
+				69DE0B5B266D41D300517248 /* Certificates.swift in Sources */,
+				69DE0B87266D41D300517248 /* ImageCardModal.swift in Sources */,
+				69DE0BAF266D41D300517248 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +509,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DE0B78266D41D300517248 /* RingView.swift in Sources */,
+				69DE0B6C266D41D300517248 /* Header.swift in Sources */,
+				69DE0B74266D41D300517248 /* DetailView.swift in Sources */,
+				69DE0B8C266D41D300517248 /* CustomLabel.swift in Sources */,
+				69DE0BB8266D41D300517248 /* UpdateModal.swift in Sources */,
+				69DE0B84266D41D300517248 /* BottomView.swift in Sources */,
+				69DE0BAC266D41D300517248 /* TabBar.swift in Sources */,
 				69DE0B2D266D40EA00517248 /* ContentView.swift in Sources */,
+				69DE0BA4266D41D300517248 /* CardView.swift in Sources */,
+				69DE0B7C266D41D300517248 /* Test.swift in Sources */,
+				69DE0B68266D41D300517248 /* VideoCard.swift in Sources */,
+				69DE0B94266D41D300517248 /* Profile.swift in Sources */,
+				69DE0BA0266D41D300517248 /* UpdateStore.swift in Sources */,
+				69DE0B90266D41D300517248 /* BlurEffect.swift in Sources */,
+				69DE0B60266D41D300517248 /* MiddleCard.swift in Sources */,
+				69DE0B64266D41D300517248 /* HomeView.swift in Sources */,
 				69DE0B2B266D40EA00517248 /* Firebase_AppApp.swift in Sources */,
+				69DE0B9C266D41D300517248 /* DingDong.swift in Sources */,
+				69DE0BA8266D41D300517248 /* UpdateView.swift in Sources */,
+				69DE0B5C266D41D300517248 /* Certificates.swift in Sources */,
+				69DE0B88266D41D300517248 /* ImageCardModal.swift in Sources */,
+				69DE0BB0266D41D300517248 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +538,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DE0B61266D41D300517248 /* MiddleCard.swift in Sources */,
+				69DE0B95266D41D300517248 /* Profile.swift in Sources */,
+				69DE0B75266D41D300517248 /* DetailView.swift in Sources */,
+				69DE0B9D266D41D300517248 /* DingDong.swift in Sources */,
+				69DE0B69266D41D300517248 /* VideoCard.swift in Sources */,
+				69DE0BA1266D41D300517248 /* UpdateStore.swift in Sources */,
+				69DE0B79266D41D300517248 /* RingView.swift in Sources */,
+				69DE0B85266D41D300517248 /* BottomView.swift in Sources */,
+				69DE0BA9266D41D300517248 /* UpdateView.swift in Sources */,
+				69DE0B6D266D41D300517248 /* Header.swift in Sources */,
+				69DE0BA5266D41D300517248 /* CardView.swift in Sources */,
 				69DE0B1D266D40EA00517248 /* Tests_iOS.swift in Sources */,
+				69DE0B7D266D41D300517248 /* Test.swift in Sources */,
+				69DE0BB9266D41D300517248 /* UpdateModal.swift in Sources */,
+				69DE0B91266D41D300517248 /* BlurEffect.swift in Sources */,
+				69DE0B8D266D41D300517248 /* CustomLabel.swift in Sources */,
+				69DE0BB1266D41D300517248 /* Card.swift in Sources */,
+				69DE0B89266D41D300517248 /* ImageCardModal.swift in Sources */,
+				69DE0B65266D41D300517248 /* HomeView.swift in Sources */,
+				69DE0B5D266D41D300517248 /* Certificates.swift in Sources */,
+				69DE0BAD266D41D300517248 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +566,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DE0B62266D41D300517248 /* MiddleCard.swift in Sources */,
+				69DE0B96266D41D300517248 /* Profile.swift in Sources */,
+				69DE0B76266D41D300517248 /* DetailView.swift in Sources */,
+				69DE0B9E266D41D300517248 /* DingDong.swift in Sources */,
+				69DE0B6A266D41D300517248 /* VideoCard.swift in Sources */,
+				69DE0BA2266D41D300517248 /* UpdateStore.swift in Sources */,
+				69DE0B7A266D41D300517248 /* RingView.swift in Sources */,
+				69DE0B86266D41D300517248 /* BottomView.swift in Sources */,
+				69DE0BAA266D41D300517248 /* UpdateView.swift in Sources */,
+				69DE0B6E266D41D300517248 /* Header.swift in Sources */,
+				69DE0BA6266D41D300517248 /* CardView.swift in Sources */,
 				69DE0B28266D40EA00517248 /* Tests_macOS.swift in Sources */,
+				69DE0B7E266D41D300517248 /* Test.swift in Sources */,
+				69DE0BBA266D41D300517248 /* UpdateModal.swift in Sources */,
+				69DE0B92266D41D300517248 /* BlurEffect.swift in Sources */,
+				69DE0B8E266D41D300517248 /* CustomLabel.swift in Sources */,
+				69DE0BB2266D41D300517248 /* Card.swift in Sources */,
+				69DE0B8A266D41D300517248 /* ImageCardModal.swift in Sources */,
+				69DE0B66266D41D300517248 /* HomeView.swift in Sources */,
+				69DE0B5E266D41D300517248 /* Certificates.swift in Sources */,
+				69DE0BAE266D41D300517248 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,6 +948,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		69DE0BBB266D425700517248 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+		69DE0BBE266D426D00517248 /* XCRemoteSwiftPackageReference "contentful.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/contentful/contentful.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		69DE0BBC266D425700517248 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69DE0BBB266D425700517248 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		69DE0BBF266D426D00517248 /* Contentful */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69DE0BBE266D426D00517248 /* XCRemoteSwiftPackageReference "contentful.swift" */;
+			productName = Contentful;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 69DE0AFC266D40E900517248 /* Project object */;
 }

@@ -4,6 +4,16 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>WorkSans-Black.ttf</string>
+		<string>WorkSans-BlackItalic.ttf</string>
+		<string>WorkSans-ExtraBold.ttf</string>
+		<string>WorkSans-Light.ttf</string>
+		<string>WorkSans-Regular.ttf</string>
+		<string>WorkSans-Bold.ttf</string>
+		<string>WorkSans-ExtraBold.ttf</string>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
