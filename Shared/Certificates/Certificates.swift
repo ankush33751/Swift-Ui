@@ -35,7 +35,8 @@ struct Certificates: View {
                     .aspectRatio(contentMode: .fit)
                     .padding(.horizontal)
                 Spacer()
-            }
+            }.offset(y:  show ? -200:0)
+            .animation(.easeInOut)
 
             ZStack{
                 CardView(title: "Swift UI", imageName:"Card3", imageWidth: 140, imageHeight: 140, logoImage: #imageLiteral(resourceName: "Logo2"))
@@ -70,12 +71,15 @@ struct Certificates: View {
                     .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                     .frame(width: 320, height: 200, alignment: .center)
                     .blendMode(.hardLight)
+                    .animation(.linear(duration: 0.1))
 
 
             }//.frame(width: 320, height: 320, alignment: .center)
             .onTapGesture {
                 show.toggle()
-            }
+            }.offset(y: show ? -100:0)
+
+
             VStack{
                 Spacer()
                 BottomView(subHeading: "This certificate is proof that Meng To has achieved the UI Design course with approval from a Design+Code instructor.", ring: $bottomCardVisibility)
@@ -86,23 +90,28 @@ struct Certificates: View {
                     .gesture(
                         DragGesture().onChanged { value in
                             self.cordinate = value.translation
+                            showCard=true
                             if self.show {
                                 self.cordinate.height += -300
+
                             }
                             if self.cordinate.height < -300 {
                                 self.cordinate.height = -300
                             }
                         }
                         .onEnded { value in
+
                             if self.cordinate.height > 50 {
-                              self.showCard = false
+
                             }
                             if (self.cordinate.height < -100 && !self.show) || (self.cordinate.height < -250 && self.show) {
                                 self.cordinate.height = -300
                                 self.show = true
+
                             } else {
                                 self.cordinate = .zero
                                 self.show = false
+
                             }
                         }
                     )

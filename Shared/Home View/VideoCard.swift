@@ -16,27 +16,21 @@ struct VideoCard: View {
     var body: some View {
         VStack{
             HStack{
-                
+                VStack(alignment: .leading) {
                 Text(boldText)
                     .font(.system(size: 24, weight: .semibold, design: .rounded))
                     .multilineTextAlignment(.leading)
-                    .foregroundColor(.white)
-                    
-                    
-                Spacer()
-                
-                 cardLogo
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 40, height: 40, alignment: .center)
-                    .clipShape(Circle())
-                
-            }.padding(.top)
-                
-            Text("\(sectionCount) Sections")
-                    .fontWeight(.light)
+
+                    Text("\(sectionCount) Sections")
+                        .fontWeight(.light)
                     .frame(maxWidth:.infinity,alignment: .leading)
-                
+            }
+                cardLogo
+                   .resizable()
+                   .aspectRatio(contentMode: .fit)
+                   .frame(width: 40, height: 40, alignment: .center)
+                   .clipShape(Circle())
+            }.padding(.top)
             
             cardImage
                 .resizable()

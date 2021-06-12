@@ -59,6 +59,7 @@ class MiddleSectionStore:ObservableObject{
 }
 
 let screen=UIScreen.main.bounds
+let device=UIDevice.current.userInterfaceIdiom
 
 struct MiddleSectionModal: Identifiable {
 

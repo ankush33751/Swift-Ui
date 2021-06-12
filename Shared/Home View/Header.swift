@@ -15,7 +15,7 @@ struct Header: View {
         HStack {
 
             Text("Watching")
-               // .modifier(CustomFont(customName: "WorkSans-ExtraBold.ttf",size: 32))
+               .modifier(CustomFont(customName: "WorkSans-ExtraBold.ttf",size: 32))
 
 
             Spacer()

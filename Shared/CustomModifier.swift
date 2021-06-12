@@ -24,4 +24,11 @@ struct ShadowModifier: ViewModifier {
             .shadow(color: .white, radius: 20, x: 0, y: 10.0)
     }
 }
-public let screen=UIScreen.main.bounds
+struct DeviceFont: ViewModifier{
+    func body(content: Content) -> some View {
+        content
+            .font(.system(size:  device == .pad ? 32:16))
+
+    }
+}
+
