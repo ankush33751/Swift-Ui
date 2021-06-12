@@ -41,13 +41,15 @@ struct LoginView: View {
                         .frame(height:device == .pad ? 400:250)
                         .padding(.bottom)
                     ,alignment: .bottom)
-                .background(MovingShapes(show: $show))
+                .background(MovingShapes(show: $show) .animation(.linear(duration: 50).repeatForever(autoreverses: false)))
                 .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)).edgesIgnoringSafeArea(.all))
+                .clipShape(RoundedCornerShape(corners: [.bottomRight,.bottomLeft], radius: 30))
+                .offset(y:-50)
                 .onAppear{
                     show=true
-                }
-                .offset(x:effect3D.width,y:effect3D.height)
-                .offset(y:-50)
+                }//.offset(y:effect3D.height)
+
+                .rotation3DEffect(.degrees(10),axis: (x: effect3D.width , y: effect3D.height, z: 0))
                 .gesture(
                     DragGesture()
                         .onChanged{
@@ -56,13 +58,13 @@ struct LoginView: View {
                             _ in
                             effect3D = .zero
                         })
-                .animation(.linear(duration: 100).repeatForever(autoreverses: false))
+               //
 
 
 //MARK:Username and Password
 
                 Login(username: $username, password: $password)
-                    .offset(y: device == .pad ? 0:-80)
+                   // .offset(y: device == .pad ? 0:-80)
 
 //MARK:Login and Forget Button.
                 HStack {
@@ -86,6 +88,7 @@ struct LoginView: View {
                             .background(RoundedCornerShape(corners: [.topLeft], radius: 20))
                     }
                     Spacer()
+
                 }.padding(.horizontal)
                 .offset(y: device == .pad ? 0: -50)
                 Spacer()
@@ -120,11 +123,14 @@ struct MovingShapes: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
 
-        LoginView().previewDevice(PreviewDevice(rawValue: "iPad Pro(12.9 inch)"))
-            .previewDisplayName("iPad Pro")
 
-//        LoginView().previewDevice("iPhone 12 mini")
-//            .previewDisplayName("iPhone 12 mini")
+        Group {
+            LoginView().previewDevice("iPhone 12 mini")
+                .previewDisplayName("iPhone 12 mini")
+
+        LoginView().previewDevice(PreviewDevice(rawValue: "iPad Pro(12.9 inch) (5th generation)"))
+            .previewDisplayName("iPad Pro")
+        }
 
     }
 }

@@ -25,7 +25,7 @@ struct Login: View {
                     .font(.system(size: device == .pad ? 32:16))
             }
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color(#colorLiteral(red: 0.6549019608, green: 0.7137254902, blue: 0.862745098, alpha: 1)))
+                .fill(Color("background3"))
                 .frame(height:1)
                 .padding(.horizontal,4)
 
@@ -45,7 +45,7 @@ struct Login: View {
 
         }.frame(width:device == .pad ? 600:300,height: device == .pad ? 200:100)
         .padding()
-        .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)),Color(#colorLiteral(red: 0.8829971099, green: 0.9685041521, blue: 0.9575159911, alpha: 0.8975605867)).opacity(0.2)]), startPoint: .topLeading, endPoint: .bottomTrailing))
+        .background(LinearGradient(gradient: Gradient(colors: [Color("background3"),Color("background3").opacity(0.7)]), startPoint: .topLeading, endPoint: .bottomTrailing))
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .shadow(color: Color.black.opacity(0.1), radius:10, x: 1, y: 1)
         .shadow(color: Color.black.opacity(0.1), radius: 10, x: -1, y: -1)

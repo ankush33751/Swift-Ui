@@ -11,7 +11,7 @@ import SwiftUI
 struct Firebase_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            TabBar() .environment(\.colorScheme, .dark)
+            LoginView() .environment(\.colorScheme, .dark)
         }
     }
 }
