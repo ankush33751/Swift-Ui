@@ -15,7 +15,12 @@ struct Header: View {
         HStack {
 
             Text("Watching")
-               .modifier(CustomFont(customName: "WorkSans-ExtraBold.ttf",size: 32))
+                .bold()
+                .font(.system(size: device == .pad ? 32:24))
+                .font(.title)
+
+
+
 
 
             Spacer()
@@ -24,7 +29,7 @@ struct Header: View {
                 .imageScale(.large)
                 .aspectRatio(contentMode: .fit)
                 .clipShape(Circle())
-                .frame(width: 50, height: 50)
+                .frame(width:device == .pad ? 80:50, height: device == .pad ? 80:50)
                 
                 .onTapGesture {
                     showProfile.toggle()
@@ -39,14 +44,14 @@ struct Header: View {
                         Image(systemName: "bell")
                             .imageScale(.large)
                             .aspectRatio(contentMode: .fit)
-                            //.frame(width: 30, height: 30)
+                            .font(.system(size: device == .pad ? 40:24))
                             
                         Circle()
                             .fill(Color.red)
-                            .frame(width:10,height:10)
-                            .offset(x:10,y:-12)
+                            .frame(width:device == .pad ? 20:10,height:device == .pad ?20:10)
+                            .offset(x:device == .pad ? 30:10,y: device == .pad ? -34:-12)
                     }
-                    .frame(width: 40 , height: 40)
+                    .frame(width: device == .pad ?100:40 , height: device == .pad ?100:40)
                     .background(Circle().fill(Color("background3")))
                     .shadow(radius: 10)
                     

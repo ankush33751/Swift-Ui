@@ -13,8 +13,14 @@ struct MiddleCard: View {
     var section:MiddleSectionModal
    
     var body: some View {
-        VideoCard(boldText:section.title, sectionCount: section.sectionCount, cardLogo:WebImage(url: section.cardLogo), cardImage: WebImage(url:section.cardImage))
-                .frame(width: 200, height: 240, alignment: .center)
+
+        VideoCard(
+            boldText:section.title,
+            sectionCount: section.sectionCount,
+            cardLogo:WebImage(url: section.cardLogo),
+            cardImage: WebImage(url:section.cardImage)
+    )
+            .frame(width: device == .pad ? 300:200, height:device == .pad ? 340:240, alignment: .center)
                 .padding(.horizontal)
                 .background(section.backgroundColor)
                 .cornerRadius(20)
@@ -30,7 +36,7 @@ struct MiddleCard_Previews: PreviewProvider {
                     cardLogo: URL(string: "https://images.ctfassets.net/eurathz3ae6j/FcqQruPC714tlDGOaCt6O/49a52fbd928932252e66afb2c0cc1e5f/Icon.png") ?? URL(string: "")!,
                     sectionCount: 14,
                     cardImage: URL(string: "https://images.ctfassets.net/eurathz3ae6j/FcqQruPC714tlDGOaCt6O/49a52fbd928932252e66afb2c0cc1e5f/Icon.png") ?? URL(string: "")!,
-                    backgroundColor:Color("0xf0ff")))
+                    backgroundColor:Color.blue))
 
 
     }

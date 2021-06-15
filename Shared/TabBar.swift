@@ -19,6 +19,9 @@ struct TabBar: View {
             UpdateView().tabItem {
                 Label("Updates", systemImage: "books.vertical.fill")
             }
+            LoginView().tabItem {
+                Label("Login", systemImage: "person")
+            }
         }
     }
 }

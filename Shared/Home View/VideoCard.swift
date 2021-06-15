@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+
 struct VideoCard: View {
     var boldText:String
     var sectionCount:Int
@@ -18,24 +19,23 @@ struct VideoCard: View {
             HStack{
                 VStack(alignment: .leading) {
                 Text(boldText)
-                    .font(.system(size: 24, weight: .semibold, design: .rounded))
+                    .bold()
+                    .font(.title)
                     .multilineTextAlignment(.leading)
-
                     Text("\(sectionCount) Sections")
-                        .fontWeight(.light)
                     .frame(maxWidth:.infinity,alignment: .leading)
             }
                 cardLogo
                    .resizable()
                    .aspectRatio(contentMode: .fit)
-                   .frame(width: 40, height: 40, alignment: .center)
+                   .frame(width: device == .pad ? 60 :40, height: device == .pad ? 60:40, alignment: .center)
                    .clipShape(Circle())
             }.padding(.top)
             
             cardImage
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            
+
         }
     }
 }

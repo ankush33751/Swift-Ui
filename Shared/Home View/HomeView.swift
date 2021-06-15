@@ -32,38 +32,36 @@ import SDWebImageSwiftUI
 
 
                         ScrollView(.horizontal,showsIndicators:false) {
-                            LazyHStack{
+                          HStack{
 
                                 ZStack {
 
                                     HStack {
-                                        RingView(borderColor: [Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)),Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))], width: 40, height:40, percent: 68, show: $showRing)
+                                        RingView(borderColor: [Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)),Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))], width: device == .pad ?60:40, height:device == .pad ?60:40, percent: 68, show: $showRing)
                                             .animation(.easeInOut)
                                         Spacer()
 
                                         VStack(alignment:.leading) {
 
                                             Text("68% is completed.")
-                                                .font(.caption)
+                                                .font(device == .pad ? .body:.caption)
 
                                             Text("Watch more.")
-                                                .font(.caption)
+                                                .font(device == .pad ? .body:.caption)
                                         }
                                     }.padding()
                                     .onTapGesture {
                                         transtionIf.toggle()
                                     }
-
-                                }.frame(width: 200, height: 60, alignment: .center)
+                                }
                                 .background(Color("background3"))
                                 .cornerRadius(20)
                                 .shadow(radius: 5)
                                 .padding(.vertical,8)
 
-                                ForEach(0 ..< 5) { _ in
-                                    RingView(borderColor: [Color(#colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)),Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1))], width: 40, height:40, percent: 52, show: $showRing)
-                                        .frame(width: 40, height: 40, alignment: .center)
-                                        .padding(.all,8)
+                                ForEach(0 ..< 7) { _ in
+                                    RingView(borderColor: [Color(#colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)),Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1))], width: device == .pad ?60:40, height:device == .pad ?60:40, percent: 52, show: $showRing)
+                                        .frame(width: device == .pad ? 100:60, height: device == .pad ?100:60, alignment: .center)
                                         .background(Color("background3"))
                                         .clipShape(Circle())
                                         .padding(.vertical,8)
@@ -88,20 +86,21 @@ import SDWebImageSwiftUI
 
                                             }.scaleEffect(1)
                                             .rotation3DEffect(
-                                                .degrees(Double(gr.frame(in: .global).maxX)/25),
+                                                .degrees(Double(gr.frame(in: .global).maxX)/50),
                                                 axis: (x:0,y:1,z:0)
                                             )
                                             .animation(.easeInOut)
 
-                                    }.frame(width: 200, height: 260, alignment: .center)
-                                    .padding(.vertical,20)
+                                    }.frame(width: device == .pad ? 300:200, height: device == .pad ? 400:260, alignment: .center)
+                                    .padding(.vertical, device == .pad ? 60:20)
                                     .padding(.leading,32)
                                 }
                             }
                         }
 
                         Text("25 Courses")
-                            .fontWeight(.light)
+                            .bold()
+                            .font(.title)
                             .frame(maxWidth:.infinity,alignment: .leading)
                             .padding(.horizontal)
 
@@ -115,14 +114,7 @@ import SDWebImageSwiftUI
 
                         Spacer()
                     }
-                    .background(
-                        LinearGradient(
-                            gradient: Gradient(
-                                colors:
-                                    [Color("background2"),Color("background1")]),startPoint: .top, endPoint: .bottom)
-                            .edgesIgnoringSafeArea(.all)
-                    )
-                    .cornerRadius(20)
+
                     .scaleEffect(showProfile ? 0.80:1)
                     .rotation3DEffect(
                         .degrees(showProfile ? 10:0),
@@ -206,7 +198,9 @@ import SDWebImageSwiftUI
     struct Home_Previews: PreviewProvider {
         static var previews: some View {
             HomeView()
-               .environment(\.colorScheme, .dark)
+               //.environment(\.colorScheme, .dark)
+//            HomeView().environment(\.colorScheme, .dark)
+//            HomeView().previewDevice("iPhone 12 mini")
         }
     }
 

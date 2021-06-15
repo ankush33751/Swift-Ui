@@ -13,6 +13,7 @@ struct LoginView: View {
     @State var effect3D:CGSize = .zero
     @State var username=""
     @State var password=""
+    @State var isDragging=false
     var body: some View {
         ZStack {
             VStack(alignment:.center) {
@@ -44,19 +45,23 @@ struct LoginView: View {
                 .background(MovingShapes(show: $show) .animation(.linear(duration: 50).repeatForever(autoreverses: false)))
                 .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)).edgesIgnoringSafeArea(.all))
                 .clipShape(RoundedCornerShape(corners: [.bottomRight,.bottomLeft], radius: 30))
+                .scaleEffect(isDragging ? 0.9:1)
+                .rotation3DEffect(.degrees(10),axis: (x: effect3D.width , y: effect3D.height, z: 0))
+
                 .offset(y:-50)
                 .onAppear{
                     show=true
                 }//.offset(y:effect3D.height)
 
-                .rotation3DEffect(.degrees(10),axis: (x: effect3D.width , y: effect3D.height, z: 0))
                 .gesture(
                     DragGesture()
                         .onChanged{
                             effect3D=$0.translation
+                            isDragging = true
                         }.onChanged{
                             _ in
                             effect3D = .zero
+                            isDragging = false
                         })
                //
 
@@ -64,7 +69,7 @@ struct LoginView: View {
 //MARK:Username and Password
 
                 Login(username: $username, password: $password)
-                   // .offset(y: device == .pad ? 0:-80)
+                    .offset(y: device == .pad ? 0:-80)
 
 //MARK:Login and Forget Button.
                 HStack {
@@ -90,7 +95,7 @@ struct LoginView: View {
                     Spacer()
 
                 }.padding(.horizontal)
-                .offset(y: device == .pad ? 0: -50)
+                .offset(y: device == .pad ? 0: -80)
                 Spacer()
             }
         }
